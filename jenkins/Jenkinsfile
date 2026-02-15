@@ -27,6 +27,11 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
+        stage('CompleteTest - Poll SCM option') {
+            steps {
+                echo 'Job CompleteTest - Poll SCM option'
+            }
+        }
         stage('Complete') {
             steps {
                 echo 'Job Complete!'
